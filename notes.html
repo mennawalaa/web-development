@@ -1,0 +1,188 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <title>my notes</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Potta One">
+</head>
+
+<body>
+  <h1>my web developments notes</h1>
+  <div class="part">
+    <h1>HTML</h1>
+  </div>
+  <div class="sub">
+    <strong>html </strong>stands for hyper text markup language<br>
+    <strong>http</strong> stands for hyper text transfer protocol<br>
+    <strong>URL</strong>stands for <em>uniform resource locator</em> this is the adress that
+    tills the browser where and how to reach the file,data object a fully quaified url for a web page on a server
+    differs from a a url for a file in computer (web padge not loaded on server)
+    <p>
+      url for web padge on server,it has to start with http//<p style="color: aqua;">http://www.github.com/</p>
+      <ul>
+        <li>transfer protcol
+          <ul>
+            <li>
+              <p class="special">http:// <em>secure incryption</em>
+            <li>
+              <p class="special">https:// <em>insecure incryption</em>
+          </ul>
+        <li>domain name :till the browser which server its connected to
+
+      </ul>
+      <p>
+        url for stored file in your computer(relaive url) <p style="color: blueviolet;">file://file path in the computer
+        </p> <br>
+        if the file is not in the computer it will give error ,if http used here that wrong because the padge is not
+        stored on a server ,if the file is in the same folder of html file put the name of file with extension
+        ex kitty.jpg
+  </div>
+  <div>
+    <em>web bages are written with html</em>> <br>
+    <em>using the web browser you can go to any web padge using its adress
+      which is its unique id stored in one of the servers</em> <br>
+    <em> web browser search a certain server using this id and
+      http<strong>(the protcol)</strong>provided with the id </em>
+    <p>
+      markup is the part of the languge used to describe how the text is written
+      like if its in bold or written in italien form it uses tags like the previous written
+      pragraph </p>
+  </div>
+  <p class="sub">
+    to see your work in browser all you have to do is to drag your html
+    file and drop it on the taskbar of your browser
+  </p>
+  <h2>syntax notes</h2>
+  <ul>
+    <li>some tags like of the void or empty tags does not have a closing tag ex:<strong>br tag ,image tag</strong>>
+    <li>
+      <p><strong>white spaces</strong> general term for spaces tabs and line breaks </p>
+      <ol>
+        <li><mark>mark tag is used for high light </mark><br>
+        <li>both br and p are used to leave a line like endl; in c++<br>
+        <li> subscribt(sub)and superscribt(sup) tag is used for scientfic and math expressions ex:
+          <ul>
+            <li> <sub>x</sub><sup>2</sup>
+            <li>H<sub>2</sub>O
+          </ul>
+        <li> ul used for unordered list
+        <li> ol used for ordered list
+        <li>
+          <p> a is used for adding a LINK in the padge it stands for anchor<br>
+            it is like this <a href="http://www.github.com/">GITHUB</a> <br>href:stands for hyper text refrence(it
+            represents the name part)
+            of the attribute while the link represents the value after closeing the openinng tag you should put the text
+            that will appear to user
+            that we he clicks on it it goes to the padge
+          </p>
+        <li>
+          <p> img is used for inserting a refrence url for an image so when user click he goes to the image through the
+            refreence <br>
+            it contain 2 attributes src :the refrence url where to go to get image ,alt:text describtion of the
+            image,<mark>alt message is displayed when image cannot be opened,img is void element have no closing tag,img
+              is inline element doesnt construct abox arround</mark>
+            ex relative image: <img class="imgbox" , src="Egypt_relief_location_map.jpg" alt="cannot load image ">
+            ex image on web server: <img class="imgbox" src="https://placekitten.com/500/200" alt="cannot load image">
+            <mark>you can make the user see the image in a new browser tab useing attribute target</mark>
+            ex: <a href="https://placekitten.com/500/200" target="_blank">cats</a>
+          </p>
+
+      </ol>
+      <h3>worthy to mention that</h3>
+      <ul>
+        <li><mark>tags can be nested ,but cannot be over lapped</mark>
+        <li><mark>there are some exceptions in the nesting like nesting a p with another p</mark>
+        <li>some tags like list li and pragraph p may not have a closing tag as the editor can excepct where it ends
+          ex : the list element ends just before the start of the next list element
+        <li>when you open the web developer tools inspector you see a picture of how the browser thniks of your code not
+          just a copy
+          of the html file
+        <li style="color:blue">style is one of the css elements ,however it can be an attribute in li or p elements as
+          this example
+          note this is an inline style and when its is used as attribute in li or p its considered a part of html
+          language
+      </ul>
+  </ul>
+  <p> to check your code go to <a href="https://validator.w3.org/nu/#textarea ">codevalidator</a>
+  </p>
+  </div>
+  <div class="part">
+    <h1>css
+    </h1>
+    <p style="color:rgb(70, 5, 18)">the WEB browser translates your html code to a tree structure
+      called DOM (DOCUMENT OBJECT MODEL)tree with one root a head and multiple nodes each node can have only on input
+      arrow</p>
+    <img class="bigbox" src="https://www.w3schools.com/js/pic_htmltree.gif" ,alt="cannot display image ">
+    <p class="bigbox"> css styling is responsable for the way the tree is transformed to the padge appearing on web
+      browser
+      ex :the elements of the list are being organized vertically or horisontally
+      css syntax composed of rule set {selector{declarations{attributes:values}}}</p>
+    <h2>CSS notes</h2>
+    <ul>
+      <li> font-size: 1.5em make the text bigger by 1.5 times its previous value
+      <li> selector can be a type li{},or a class .vip{},or specific id #unique{}
+      <li>to call the class or id you add atttribute class or id to your element <p class="special">implemented example
+          ofr a class p see the code html</p>
+      <li>css use pixels to measure and describe web padge screen its really the hard ware pixels
+        1 inch=96 css pixels ,1cm=37.8 css pixels,there is another unit named pt,1 inch=72 pt, em unit equal to the font
+        size text in the element
+      <li>dimenstions can be a rathio from the web badge size like width:50%
+      <li> this a refrence for css material <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">click
+          here</a>
+      <li>we cannot write css code inside html because its a different language ,however there are three ways to use css
+        with html
+
+        <ol>
+          <li>use the css command as an attribute style with html elements
+          <li>write css code inside style element in the head of html file
+          <li>write css code in a separet file and include it in the html file using like element in the head of the
+            file
+        </ol>
+      <li><a href="https://www.w3schools.com/colors/colors_picker.asp">this the color picker link</a>
+      <li>when choosing the font type ,one can choose a type font that doesnt exist in the webserver
+        so ,the browser would use the default font type which could different from what the designer whats
+        in order to avoid this we can use generic css font-family with general types that if the bowser
+        didnt have the specific font he uses the general css family specficed like monospace,serif
+        or one can use google web fonts types whcih doesnt need to be loaded on the computer
+        full document for google web font use <a href="https://developers.google.com/fonts/docs/getting_started">get
+          started</a>
+        <a href="https://fonts.google.com/">fonts availabe</a>
+      <li> those are some font parameters
+        font-weight: bold;<br>
+        font-style: italic;<br>
+        font-size: 14pt;<br>
+        text-decoration: underline;<br>
+      <li class="vip">font commands can be embedded in one line in specfic proiroty order the order can be found on
+        <a href="this handy page from the CSS-Tricks website.">click here</a>
+      <li class="vip">if font properties are not in correct order thsi cause <strong>gotcha</strong>:means a code seems
+        right but it causes
+        a mistake
+      <li>flexbox is property to fit boxs into a container with various configurations to read more about
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes">see
+          the following link</a>
+      <li class="vip">algin-element align elements along cross axis ,while jusitfy content align element along main axis
+      <li>grid is nice to use to set the whole padge layout ,while flexbox is nice to set the flow of the inner boxes
+      <li><a
+          href="https://medium.com/youstart-labs/beginners-guide-to-choose-between-css-grid-and-flexbox-783005dd2412">grid
+          vs flexbox</a>
+      <li><a href="https://cssgrid-generator.netlify.app/">grid-generator</a>
+      <li> a piece of grid code at container: <div class="cod"> grid-template-columns:45vw 45vw;<br>
+          grid-template-rows:45vw 45vw;
+        </div>
+        <div class="cod">
+          at box : /* set grid-area here: row start/column start/ row end/ column end */<br>
+          grid-area:1/1/2/4;
+        </div>
+        <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">complete guid to grids</a>
+
+  </div>
+  <div class="container">
+    <div class="redbox">love </div>
+    <div class="bluebox">dont love </div>
+    <div class="greenbox">interseted</div>
+  </div>
+
+</body>
+
+</html>
